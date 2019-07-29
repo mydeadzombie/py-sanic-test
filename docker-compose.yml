@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  sanic:
+    build: .
+    env_file:
+      - .env
+    # environment:
+    #   - CDN_HOST=cdn.host
+    ports:
+      - "8000:8000"
